@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.tictactoe_csc311.PrimaryController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="newGameButton" mnemonicParsing="false" onAction="#restartGame" text="New Game" />
+              <MenuItem fx:id="closeGameButton" mnemonicParsing="false" onAction="#closeGame" text="Close" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="600.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="575.0" layoutX="187.0" stroke="BLACK" strokeType="INSIDE" width="7.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="575.0" layoutX="402.0" stroke="BLACK" strokeType="INSIDE" width="7.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="8.0" layoutY="190.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="8.0" layoutY="393.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+            <Button fx:id="button1" mnemonicParsing="false" onAction="#playerMove" prefHeight="190.0" prefWidth="187.0" />
+            <Circle fx:id="circle1" fill="#7310bf" layoutX="94.0" layoutY="95.0" radius="70.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" visible="false" />
+            <Rectangle fx:id="rect1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="150.0" layoutX="19.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" visible="false" width="150.0" />
+            <Button fx:id="button2" layoutX="194.0" mnemonicParsing="false" onAction="#playerMove" prefHeight="190.0" prefWidth="209.0" />
+            <Circle fx:id="circle2" fill="#7310bf" layoutX="300.0" layoutY="95.0" radius="70.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" visible="false" />
+            <Rectangle fx:id="rect2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="150.0" layoutX="224.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" visible="false" width="150.0" />
+            <Button fx:id="button3" layoutX="409.0" mnemonicParsing="false" onAction="#playerMove" prefHeight="190.0" prefWidth="191.0" />
+            <Circle fx:id="circle3" fill="#7310bf" layoutX="505.0" layoutY="95.0" radius="70.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" visible="false" />
+            <Rectangle fx:id="rect3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="150.0" layoutX="430.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" visible="false" width="150.0" />
+            <Button fx:id="button4" layoutY="197.0" mnemonicParsing="false" onAction="#playerMove" prefHeight="196.0" prefWidth="187.0" />
+            <Circle fx:id="circle4" fill="#7310bf" layoutX="94.0" layoutY="295.0" radius="70.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" visible="false" />
+            <Rectangle fx:id="rect4" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="150.0" layoutX="19.0" layoutY="220.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" visible="false" width="150.0" />
+            <Button fx:id="button5" layoutX="194.0" layoutY="197.0" mnemonicParsing="false" onAction="#playerMove" prefHeight="196.0" prefWidth="209.0" />
+            <Circle fx:id="circle5" fill="#7310bf" layoutX="299.0" layoutY="295.0" radius="70.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" visible="false" />
+            <Rectangle fx:id="rect5" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="150.0" layoutX="225.0" layoutY="220.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" visible="false" width="150.0" />
+            <Button fx:id="button6" layoutX="409.0" layoutY="197.0" mnemonicParsing="false" onAction="#playerMove" prefHeight="196.0" prefWidth="191.0" />
+            <Circle fx:id="circle6" fill="#7310bf" layoutX="505.0" layoutY="295.0" radius="70.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" visible="false" />
+            <Rectangle fx:id="rect6" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="150.0" layoutX="430.0" layoutY="220.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" visible="false" width="150.0" />
+            <Button fx:id="button7" layoutY="401.0" mnemonicParsing="false" onAction="#playerMove" prefHeight="174.0" prefWidth="187.0" />
+            <Circle fx:id="circle7" fill="#7310bf" layoutX="94.0" layoutY="488.0" radius="70.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" visible="false" />
+            <Rectangle fx:id="rect7" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="150.0" layoutX="19.0" layoutY="413.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" visible="false" width="150.0" />
+            <Button fx:id="button8" layoutX="194.0" layoutY="401.0" mnemonicParsing="false" onAction="#playerMove" prefHeight="174.0" prefWidth="209.0" />
+            <Circle fx:id="circle8" fill="#7310bf" layoutX="305.0" layoutY="488.0" radius="70.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" visible="false" />
+            <Rectangle fx:id="rect8" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="150.0" layoutX="225.0" layoutY="413.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" visible="false" width="150.0" />
+            <Button fx:id="button9" layoutX="409.0" layoutY="401.0" mnemonicParsing="false" onAction="#playerMove" prefHeight="174.0" prefWidth="191.0" />
+            <Circle fx:id="circle9" fill="#7310bf" layoutX="505.0" layoutY="488.0" radius="70.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" visible="false" />
+            <Rectangle fx:id="rect9" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="150.0" layoutX="430.0" layoutY="413.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" visible="false" width="150.0" />
+         </children>
+      </Pane>
+   </children>
+</VBox>
